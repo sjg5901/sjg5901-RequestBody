@@ -43,6 +43,7 @@ public class JavalinSingleton {
         app.post("/changeartisttobeatles", ctx -> {
 
             //implement logic here
+            
             String jsonString = ctx.body();
 
             Song song = om.readValue(jsonString, Song.class);
